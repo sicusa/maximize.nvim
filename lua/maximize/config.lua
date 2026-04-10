@@ -7,6 +7,7 @@ local defaults = {
     aerial = { enable = true },
     dapui = { enable = true },
     tree = { enable = true },
+    overseer = { enable = true },
   },
 }
 
