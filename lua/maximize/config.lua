@@ -4,10 +4,10 @@ M.options = {}
 
 local defaults = {
   plugins = {
-    aerial = { enable = true },
-    dapui = { enable = true },
-    tree = { enable = true },
-    overseer = { enable = true },
+    { 'aerial', { enable = true } },
+    { 'dapui', { enable = true } },
+    { 'tree', { enable = true } },
+    { 'overseer', { enable = true } },
   },
 }
 

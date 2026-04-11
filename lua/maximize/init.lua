@@ -10,7 +10,8 @@ M.setup = function(user_config)
   config.setup(user_config)
 
   integrations.plugins = {}
-  for name, options in pairs(config.options.plugins) do
+  for _, pair in ipairs(config.options.plugins) do
+    local name, options = pair[1], pair[2]
     if options.enable then
       table.insert(integrations.plugins, require('maximize.integrations.' .. name))
     end
